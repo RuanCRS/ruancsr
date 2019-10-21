@@ -8,9 +8,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    @import url('https://fonts.googleapis.com/css?family=Barlow:500,600,700&display=swap');
     background: #000;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
+    ul,li{list-style:none;}
   }
 
 `;
