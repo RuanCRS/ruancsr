@@ -1,7 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import Styled from "styled-components";
 
 import ImageProfile from "../assets/profile.png";
+import api from "../services/api";
 
 const Container = Styled.div`
   display:flex;
@@ -54,27 +55,45 @@ const Profile = Styled.div`
 
 `;
 
-const Top = () => (
-  <Container>
-    <Menu>
-      <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/sobre">Sobre</a>
-        </li>
+class Top extends Component {
+  componentDidMount() {
+    this.getUsers();
+  }
+  getUsers = async () => {
+    try {
+      const response = await api.get(`/repos/vuejs/vue`);
+      console.log(response.data);
+      console.log(response.data.onTimeBilling.valor);
+    } catch (err) {
+      console.log(false);
+      console.log(err);
+    }
+  };
 
-        <li>
-          <a href="/contato">Contato</a>
-        </li>
-      </ul>
-    </Menu>
+  render() {
+    return (
+      <Container>
+        <Menu>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/sobre">Sobre</a>
+            </li>
 
-    <Profile>
-      <img src={ImageProfile} />
-    </Profile>
-  </Container>
-);
+            <li>
+              <a href="/contato">Contato</a>
+            </li>
+          </ul>
+        </Menu>
+
+        <Profile>
+          <img src={ImageProfile} />
+        </Profile>
+      </Container>
+    );
+  }
+}
 
 export default Top;
