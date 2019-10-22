@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import Styled from "styled-components";
 
 import ImageProfile from "../assets/profile.png";
-import ImageBackground from "../assets/banners/banner_code.jpg";
-
 import api from "../services/api";
 
 const Container = Styled.div`
@@ -61,8 +59,6 @@ const Profile = Styled.div`
 `;
 
 const BackgroundImage = Styled.div`
-
- /* background-image: url(${ImageBackground});*/
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
