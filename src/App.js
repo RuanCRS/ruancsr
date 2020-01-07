@@ -1,14 +1,16 @@
-import React, { Fragment } from "react";
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+
 import GlobalStyle from "./styles/global";
+import history from "./history";
+import Routes from "./routes";
 
-import Menu from "./pages/Top";
+export default function App() {
+  return (
+    <BrowserRouter basename="/">
+      <GlobalStyle />
 
-const App = () => (
-  <Fragment>
-    <GlobalStyle />
-    <Menu></Menu>
-    <div className="App" />
-  </Fragment>
-);
-
-export default App;
+      <Routes history={history} />
+    </BrowserRouter>
+  );
+}
