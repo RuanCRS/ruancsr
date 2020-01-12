@@ -24,7 +24,7 @@ export const Menu = Styled.div`
 
   a {
     font-family: 'Barlow', sans-serif;
-    color: #fff;
+    color: #000;
     text-decoration:none;
     font-size: 30px;
     padding: 10px;

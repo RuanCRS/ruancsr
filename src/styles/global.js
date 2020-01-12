@@ -9,10 +9,25 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     @import url('https://fonts.googleapis.com/css?family=Barlow:500,600,700&display=swap');
-    background: #000;
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
+
+    background: #f8f8f8;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     ul,li{list-style:none;}
+
+    h1{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 800;
+      font-size: 35px;
+    }
+
+    h2{ 
+      font-size: 20px;
+    }
+
+
+
   }
 
 `;

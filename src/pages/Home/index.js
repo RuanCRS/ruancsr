@@ -4,6 +4,7 @@ import WOW from "wowjs";
 import Top from "../../components/Top";
 // import Profile from "../../components/Profile";
 // import Code from "../../components/Code";
+import News from "../../components/News";
 import Bottom from "../../components/Bottom";
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Top />
-      <Bottom />
+      <News />
     </>
   );
 }
