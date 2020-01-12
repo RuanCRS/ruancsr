@@ -65,7 +65,7 @@ export const TopNews = styled.div`
 
   .title {
     margin-bottom: 30px;
-    background: linear-gradient(to right, #ff8a00, #e52e71);
+    background: linear-gradient(to right, #a800d2, #7000d4);
     padding: 8px;
     -webkit-border-radius: 0px 285px 0px 0px;
     -moz-border-radius: 0px 285px 0px 0px;

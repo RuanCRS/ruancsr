@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <Top />
       <News />
-      <Bottom />
+      {/* <Bottom /> */}
     </>
   );
 }
