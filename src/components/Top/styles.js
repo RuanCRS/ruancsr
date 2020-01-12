@@ -2,6 +2,12 @@ import Styled from "styled-components";
 
 // import ImagemH from "../../assets/icones/mg.png";
 
+export const Header = Styled.div`
+  background: linear-gradient(to right,#ff8a00,#e52e71);
+
+  width: 100%;
+`;
+
 export const Container = Styled.div`
   display:flex;
   flex-direction: column;
@@ -24,9 +30,9 @@ export const Menu = Styled.div`
 
   a {
     font-family: 'Barlow', sans-serif;
-    color: #000;
+    color: #fff;
     text-decoration:none;
-    font-size: 30px;
+    font-size: 23px;
     padding: 10px;
     display:block;
     list-style-type: none;

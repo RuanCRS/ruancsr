@@ -23,10 +23,24 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h2{ 
+      font-size: 20px;   
+      font-weight: 800;
+    }
+      
+    h3 {
       font-size: 20px;
+      font-weight: 800;
     }
 
+    p {
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+    }
 
+    a{
+      font-family: 'Barlow', sans-serif;
+
+    }
 
   }
 

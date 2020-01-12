@@ -1,10 +1,10 @@
 import React from "react";
 
-import { Container, Menu } from "./styles";
+import { Header, Container, Menu } from "./styles";
 
 export default function Top() {
   return (
-    <>
+    <Header>
       <Container>
         <Menu>
           <ul>
@@ -21,6 +21,6 @@ export default function Top() {
           </ul>
         </Menu>
       </Container>
-    </>
+    </Header>
   );
 }
