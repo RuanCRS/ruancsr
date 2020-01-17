@@ -160,7 +160,7 @@ export default function NewsComponent() {
         </News>
         <TopNews>
           <div className="title">
-            <p>Top News</p>
+            <p>Top</p>
           </div>
           {RenderDatasTopNews}
         </TopNews>

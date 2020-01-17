@@ -14,14 +14,20 @@ export default function Top() {
 
           <ul>
             <li className="btn">
-              <a href="/">Home</a>
+              <a href="/">Início</a>
             </li>
             <li className="btn">
-              <a href="/sobre">Sobre</a>
+              <a href="/noticias">Notícias</a>
             </li>
 
             <li className="btn">
-              <a href="/contato">Contato</a>
+              <a href="/quizz">Quizz</a>
+            </li>
+            <li className="btn">
+              <a href="/humor">Humor</a>
+            </li>
+            <li className="btn">
+              <a href="/loja">Loja</a>
             </li>
           </ul>
         </Menu>

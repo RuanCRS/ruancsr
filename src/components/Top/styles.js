@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 export const Header = styled.div`
-  background: linear-gradient(to right, #a800d2, #7000d4);
+  /* background: linear-gradient(to right, #a800d2, #7000d4); */
+  background: linear-gradient(to right, #fff, #fff);
+  position: fixed;
+  width: 100%;
 `;
 
 export const Container = styled.div`
@@ -17,22 +20,27 @@ export const Menu = styled.div`
     align-items: left;
     width: 100%;
     padding-left: 90px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
   }
 
   li {
-    display: flex;
-    float: left;
+    display: inline-block;
+    width: auto;
+    text-align: center;
   }
 
   .btn a {
     font-family: "Barlow", sans-serif;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-size: 23px;
     padding: 10px;
     display: block;
     list-style-type: none;
     cursor: pointer;
+    font-weight: 800;
   }
 
   .btn:hover {

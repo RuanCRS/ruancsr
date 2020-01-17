@@ -5,7 +5,7 @@ export const Container = styled.div`
   /* flex-direction: column; */
   margin: auto;
   width: 1200px;
-  padding-top: 30px;
+  padding-top: 90px;
   padding-bottom: 100px;
 `;
 
@@ -51,7 +51,7 @@ export const TopNews = styled.div`
 
   .news {
     background-color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .news:hover {
@@ -94,12 +94,15 @@ export const TopNews = styled.div`
 
 export const BlockNews = styled.div`
   .news {
-    width: 100%;
+    width: 49.5%;
     display: inline-block;
     float: left;
-    margin-top: 30px;
+    margin-top: 20px;
     background-color: #fff;
-    border-right: 5px solid #f1f1f1;
+  }
+
+  .news:nth-child(2n) {
+    margin-left: 1%;
   }
 
   .news:hover {
@@ -107,13 +110,13 @@ export const BlockNews = styled.div`
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
   }
   .image {
-    width: 50%;
+    width: 100%;
     display: inline-block;
     float: left;
   }
 
   .text {
-    width: 50%;
+    width: 100%;
     display: inline-block;
     float: left;
     padding: 10px;
