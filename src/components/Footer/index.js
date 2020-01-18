@@ -1,10 +1,10 @@
 import React from "react";
 
-import { Bottom, Container, Content } from "./styles";
+import { Footer, Container, Content, Copyright } from "./styles";
 
-export default function ComponentBottom() {
+export default function ComponentFooter() {
   return (
-    <Bottom>
+    <Footer>
       <Container>
         <Content>
           <ul>
@@ -21,6 +21,9 @@ export default function ComponentBottom() {
           </ul>
         </Content>
       </Container>
-    </Bottom>
+      <Copyright>
+        <p>Copyright © 2020 Feedzao. Todos os direitos reservados</p>
+      </Copyright>
+    </Footer>
   );
 }
