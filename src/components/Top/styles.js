@@ -14,9 +14,14 @@ export const Container = styled.div`
   flex-direction: column;
   margin: auto;
   width: 1200px;
+
+  @media screen and (max-width: 1201px) {
+    width: 90%;
+  }
 `;
 
 export const Menu = styled.div`
+  min-height: 52px;
   ul {
     display: inline-block;
     align-items: left;
@@ -58,6 +63,42 @@ export const Menu = styled.div`
   .logo img {
     width: 70px;
   }
+
+  @media screen and (max-width: 1025px) {
+    .btn a {
+      font-size: 20px;
+      padding: 15px 7px;
+    }
+  }
+  @media screen and (max-width: 769px) {
+    .btn a {
+      font-size: 18px;
+    }
+
+    .logo img {
+      width: 60px;
+    }
+  }
+
+  @media screen and (max-width: 651px) {
+    ul {
+      position: fixed;
+      width: 50%;
+      z-index: 11;
+      right: 0px;
+      top: 0px;
+      background-color: #fff;
+      height: 100%;
+      display: none;
+    }
+    li {
+      width: 100%;
+    }
+
+    .btn a {
+      padding: 8px 7px;
+    }
+  }
 `;
 
 export const BackgroundImage = styled.div`
@@ -75,6 +116,15 @@ export const Login = styled.div`
     cursor: pointer;
     width: 40px;
   }
+  @media screen and (max-width: 1025px) {
+    right: 5%;
+  }
+
+  @media screen and (max-width: 769px) {
+    img {
+      width: 35px;
+    }
+  }
 `;
 
 export const Find = styled.div`
@@ -86,5 +136,15 @@ export const Find = styled.div`
   img {
     cursor: pointer;
     width: 40px;
+  }
+
+  @media screen and (max-width: 1025px) {
+    right: 12%;
+  }
+
+  @media screen and (max-width: 769px) {
+    img {
+      width: 35px;
+    }
   }
 `;

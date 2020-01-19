@@ -9,14 +9,52 @@ export default function ComponentFooter() {
         <Content>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <a href="/">Início</a>
             </li>
+            <li>
+              <a href="/noticias">Notícias</a>
+            </li>
+
+            <li>
+              <a href="/quizz">Quizz</a>
+            </li>
+
+            <li>
+              <a href="/humor">Humor</a>
+            </li>
+
+            <li>
+              <a href="/loja">Loja</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <a href="/quem-somos">Quem somos</a>
+            </li>
+            <li>
+              <a href="/contato">Contato</a>
+            </li>
+
             <li>
               <a href="/sobre">Sobre</a>
             </li>
 
             <li>
-              <a href="/contato">Contato</a>
+              <a href="/seja-um-parceiro">Seja um parceiro</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <a href="/"></a>
+            </li>
+            <li>
+              <a href="/"></a>
+            </li>
+
+            <li>
+              <a href="/"></a>
             </li>
           </ul>
         </Content>

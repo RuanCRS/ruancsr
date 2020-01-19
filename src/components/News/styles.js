@@ -2,16 +2,34 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  /* flex-direction: column; */
   margin: auto;
   width: 1200px;
   padding-top: 90px;
   padding-bottom: 100px;
+
+  @media screen and (max-width: 1201px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 651px) {
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    padding: 20px;
+    padding-top: 90px;
+  }
 `;
 
 export const News = styled.div`
   width: 70%;
   padding-right: 50px;
+
+  @media screen and (max-width: 651px) {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    padding-right: 0px;
+  }
 `;
 
 export const FirstNews = styled.div`
@@ -38,6 +56,30 @@ export const FirstNews = styled.div`
   img {
     width: 100%;
     height: 100%;
+  }
+
+  @media screen and (max-width: 1025px) {
+    h1 {
+      font-size: 30px;
+    }
+  }
+  @media screen and (max-width: 769px) {
+    h1 {
+      font-size: 23px;
+    }
+  }
+
+  @media screen and (max-width: 426px) {
+    h1 {
+      font-size: 20px;
+    }
+    .text {
+      padding: 10px 20px;
+    }
+
+    p {
+      font-size: 16px;
+    }
   }
 `;
 
@@ -90,6 +132,33 @@ export const TopNews = styled.div`
     right: 10px;
     bottom: 8px;
   }
+
+  @media screen and (max-width: 651px) {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    margin-top: 30px;
+
+    .news {
+      width: 48%;
+      float: left;
+      margin-left: 2%;
+    }
+  }
+
+  @media screen and (max-width: 651px) {
+    .news {
+      width: 100%;
+      margin-left: 0%;
+    }
+    h2 {
+      font-size: 18px;
+    }
+
+    span {
+      padding: 5px 11px;
+    }
+  }
 `;
 
 export const BlockNews = styled.div`
@@ -130,5 +199,11 @@ export const BlockNews = styled.div`
   p {
     font-size: 15px;
     margin-top: 4px;
+  }
+
+  @media screen and (max-width: 426px) {
+    .news {
+      width: 100%;
+    }
   }
 `;
