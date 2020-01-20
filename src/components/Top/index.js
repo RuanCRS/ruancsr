@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 
-import { Header, Container, Menu, Login, Find } from "./styles";
+import {
+  Header,
+  Container,
+  Menu,
+  Login,
+  Find,
+  BtnMobile,
+  BtnCloseMenuMobile,
+} from "./styles";
+
 import IconLogo from "../../assets/icons/logo.png";
 import IconLogin from "../../assets/icons/login.png";
 import IconFind from "../../assets/icons/find.png";
+import IconBtnMenu from "../../assets/icons/btn_menu.png";
 
 export default function Top() {
+  const [OpenMenuMobile, setOpenMenuMobile] = useState(false);
+
   return (
     <Header>
       <Container>
@@ -14,7 +26,11 @@ export default function Top() {
             <img src={IconLogo} alt="Logo" title="Logo" />
           </a>
 
-          <ul>
+          <ul style={OpenMenuMobile ? { display: "block" } : {}}>
+            <BtnCloseMenuMobile onClick={() => setOpenMenuMobile(false)}>
+              X
+            </BtnCloseMenuMobile>
+
             <li className="btn">
               <a href="/">Início</a>
             </li>
@@ -31,14 +47,16 @@ export default function Top() {
             <li className="btn">
               <a href="/loja">Loja</a>
             </li>
+            <Login>
+              <img src={IconLogin} alt="Entrar" title="Entrar" />
+            </Login>
+            <Find>
+              <img src={IconFind} alt="Buscar" title="Buscar" />
+            </Find>
           </ul>
-
-          <Find>
-            <img src={IconFind} alt="Buscar" title="Buscar" />
-          </Find>
-          <Login>
-            <img src={IconLogin} alt="Entrar" title="Entrar" />
-          </Login>
+          <BtnMobile onClick={() => setOpenMenuMobile(true)}>
+            <img src={IconBtnMenu} />
+          </BtnMobile>
         </Menu>
       </Container>
     </Header>

@@ -1,9 +1,19 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 
-import { Container, News, TopNews, FirstNews, BlockNews } from "./styles";
+import {
+  Container,
+  News,
+  TopNews,
+  FirstNews,
+  BlockNews,
+  SocialNetworks,
+} from "./styles";
 
 import TopNewsImage from "../../assets/TopNews/01news.png";
+import IconeFacebook from "../../assets/icons/facebook.png";
+import IconeInstagram from "../../assets/icons/instagram.png";
+import IconeTwitter from "../../assets/icons/twitter.png";
 
 const dataTopNews = [
   {
@@ -159,9 +169,28 @@ export default function NewsComponent() {
           <BlockNews>{RenderDatasBlockNews}</BlockNews>
         </News>
         <TopNews>
-          <div className="title">
+          <SocialNetworks>
+            <div className="social-network">
+              <div className="title-sn">
+                <p>Siga-me os bons</p>
+              </div>
+              <div className="social-links">
+                <a>
+                  <img src={IconeFacebook} />
+                </a>
+                <a>
+                  <img src={IconeTwitter} />
+                </a>
+                <a>
+                  <img src={IconeInstagram} />
+                </a>
+              </div>
+            </div>
+          </SocialNetworks>
+
+          {/* <div className="title">
             <p>Top</p>
-          </div>
+          </div> */}
           {RenderDatasTopNews}
         </TopNews>
       </Container>

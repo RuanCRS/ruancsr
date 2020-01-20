@@ -38,7 +38,7 @@ export const Content = styled.div`
     font-family: "Barlow", sans-serif;
     color: #fff;
     text-decoration: none;
-    font-size: 23px;
+    font-size: 22px;
     padding: 7px;
     display: block;
     list-style-type: none;
@@ -74,12 +74,12 @@ export const Copyright = styled.div`
   padding: 20px 10px;
   p {
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   @media only screen and (max-width: 426px) {
     p {
-      font-size: 18px;
+      font-size: 16px;
     }
   }
 `;

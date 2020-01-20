@@ -18,6 +18,9 @@ export const Container = styled.div`
   @media screen and (max-width: 1201px) {
     width: 90%;
   }
+  @media screen and (max-width: 769px) {
+    width: 97%;
+  }
 `;
 
 export const Menu = styled.div`
@@ -27,8 +30,7 @@ export const Menu = styled.div`
     align-items: left;
     width: 100%;
     text-align: center;
-    display: inline-block;
-    width: 100%;
+    position: relative;
   }
 
   li {
@@ -41,7 +43,7 @@ export const Menu = styled.div`
     font-family: "Barlow", sans-serif;
     color: #000;
     text-decoration: none;
-    font-size: 23px;
+    font-size: 22px;
     padding: 15px 10px;
     display: block;
     list-style-type: none;
@@ -51,7 +53,7 @@ export const Menu = styled.div`
   }
 
   .btn a:hover {
-    background: linear-gradient(to right, #a800d2, #7000d4);
+    background: linear-gradient(to right, #8206c9, #4a09b5);
     color: #fff;
   }
 
@@ -61,7 +63,7 @@ export const Menu = styled.div`
   }
 
   .logo img {
-    width: 70px;
+    width: 180px;
   }
 
   @media screen and (max-width: 1025px) {
@@ -76,7 +78,7 @@ export const Menu = styled.div`
     }
 
     .logo img {
-      width: 60px;
+      width: 160px;
     }
   }
 
@@ -107,44 +109,77 @@ export const BackgroundImage = styled.div`
 `;
 
 export const Login = styled.div`
-  display: inline;
+  width: auto;
+  display: inline-block;
+  float: right;
+  margin-top: 10px;
+  margin-right: 25px;
   position: absolute;
-  right: 15%;
-  top: 10px;
+  right: 0px;
 
   img {
     cursor: pointer;
-    width: 40px;
+    width: 35px;
   }
   @media screen and (max-width: 1025px) {
     right: 5%;
   }
-
-  @media screen and (max-width: 769px) {
-    img {
-      width: 35px;
-    }
-  }
 `;
 
 export const Find = styled.div`
-  display: inline;
+  width: auto;
+  display: inline-block;
+  float: right;
+  margin-top: 10px;
+  margin-right: 15px;
   position: absolute;
-  right: 20%;
-  top: 10px;
-
+  z-index: 2;
+  right: 59px;
   img {
     cursor: pointer;
-    width: 40px;
+    width: 35px;
   }
 
   @media screen and (max-width: 1025px) {
     right: 12%;
   }
 
-  @media screen and (max-width: 769px) {
+  /* @media screen and (max-width: 769px) {
     img {
       width: 35px;
     }
+  } */
+`;
+
+export const BtnMobile = styled.a`
+  width: auto;
+  float: right;
+  margin-top: 10px;
+  margin-right: 25px;
+  position: absolute;
+  right: 0px;
+  display: none;
+  top: 5px;
+
+  img {
+    width: 25px;
+  }
+
+  @media screen and (max-width: 651px) {
+    display: inline-block;
+  }
+`;
+
+export const BtnCloseMenuMobile = styled.a`
+  display: none;
+  float: right;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #53207b;
+  cursor: pointer;
+
+  @media screen and (max-width: 651px) {
+    display: inline-block;
   }
 `;
