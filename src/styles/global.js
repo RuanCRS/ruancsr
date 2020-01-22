@@ -37,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Barlow', sans-serif;
     }
 
-    a{
+    a, span{
       font-family: 'Barlow', sans-serif;
 
     }

@@ -150,6 +150,9 @@ export default function NewsComponent() {
         <News>
           <FirstNews>
             <div className="first">
+              <div className="spotlight">
+                <span>Destaque</span>
+              </div>
               <img src={TopNewsImage} />
               <div className="text">
                 <h1>

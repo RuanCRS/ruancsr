@@ -53,7 +53,8 @@ export const Menu = styled.div`
   }
 
   .btn a:hover {
-    background: linear-gradient(to right, #8206c9, #4a09b5);
+    background: linear-gradient(to right, #8206c9, #8206c9);
+    /* background-color: rgba(130, 6, 201, 0.3) */
     color: #fff;
   }
 

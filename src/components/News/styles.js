@@ -32,10 +32,13 @@ export const News = styled.div`
   }
 `;
 
-export const FirstNews = styled.div`
+export const FirstNews = styled.section`
   width: 100%;
   display: inline;
   background-color: #fff;
+  .first {
+    position: relative;
+  }
 
   .first:hover {
     cursor: pointer;
@@ -47,6 +50,26 @@ export const FirstNews = styled.div`
     background-color: #fff;
     width: 100%;
     padding: 20px;
+  }
+
+  .spotlight {
+    /* background-image: linear-gradient(#8206c9, #4a09b5); */
+    background-color: rgba(130, 6, 201, 0.3);
+    position: absolute;
+    padding: 10px;
+    width: 100%;
+    -webkit-border-radius: 0px 0px 64px 0px;
+    -moz-border-radius: 0px 0px 64px 0px;
+    -ms-border-radius: 0px 0px 64px 0px;
+    -o-border-radius: 0px 0px 64px 0px;
+  }
+
+  .spotlight span {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 15px;
   }
 
   h1 {
@@ -63,6 +86,12 @@ export const FirstNews = styled.div`
       font-size: 30px;
     }
   }
+  @media screen and (max-width: 991px) {
+    .spotlight span {
+      font-size: 18px;
+    }
+  }
+
   @media screen and (max-width: 769px) {
     h1 {
       font-size: 23px;
@@ -80,10 +109,14 @@ export const FirstNews = styled.div`
     p {
       font-size: 16px;
     }
+
+    .spotlight span {
+      font-size: 16px;
+    }
   }
 `;
 
-export const TopNews = styled.div`
+export const TopNews = styled.section`
   width: 30%;
 
   img {
@@ -161,7 +194,7 @@ export const TopNews = styled.div`
   }
 `;
 
-export const BlockNews = styled.div`
+export const BlockNews = styled.section`
   .news {
     width: 49.5%;
     display: inline-block;
