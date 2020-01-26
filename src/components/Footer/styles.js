@@ -27,6 +27,15 @@ export const Content = styled.div`
     padding-left: 50px;
   }
 
+  div {
+    display: inline-block;
+    align-items: left;
+    width: 33.33%;
+    float: left;
+
+    padding-left: 50px;
+  }
+
   li {
     float: left;
     display: inline-block;
@@ -49,10 +58,35 @@ export const Content = styled.div`
     text-decoration: underline;
   }
 
+  .social-profile li {
+    display: inline-block;
+    width: auto;
+  }
+
+  .social-profile li a {
+    cursor: pointer;
+  }
+  .social-profile h3 {
+    color: #fff;
+    width: 100%;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
   @media only screen and (max-width: 769px) {
     ul {
       width: 50%;
       padding-left: 0px;
+    }
+    div {
+      width: 100%;
+      float: left;
+      padding-left: 0px;
+      margin-top: 25px;
+    }
+    .social-profile h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
     }
   }
 

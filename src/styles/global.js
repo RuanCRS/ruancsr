@@ -15,9 +15,15 @@ const GlobalStyle = createGlobalStyle`
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     ul,li{list-style:none;}
+    h1, h2{
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    a, span, p, h3{
+      font-family: 'Barlow', sans-serif;
+    }
 
     h1{
-      font-family: 'Open Sans', sans-serif;
       font-weight: 800;
       font-size: 35px;
     }
@@ -34,13 +40,8 @@ const GlobalStyle = createGlobalStyle`
 
     p {
     font-size: 18px;
-    font-family: 'Barlow', sans-serif;
     }
 
-    a, span{
-      font-family: 'Barlow', sans-serif;
-
-    }
 
   }
 

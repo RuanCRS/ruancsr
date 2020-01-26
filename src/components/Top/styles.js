@@ -144,12 +144,9 @@ export const Find = styled.div`
   @media screen and (max-width: 1025px) {
     right: 12%;
   }
-
-  /* @media screen and (max-width: 769px) {
-    img {
-      width: 35px;
-    }
-  } */
+  @media screen and (max-width: 651px) {
+    display: none;
+  }
 `;
 
 export const BtnMobile = styled.a`

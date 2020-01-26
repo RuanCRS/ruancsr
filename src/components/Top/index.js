@@ -47,9 +47,9 @@ export default function Top() {
             <li className="btn">
               <a href="/loja">Loja</a>
             </li>
-            <Login>
+            {/* <Login>
               <img src={IconLogin} alt="Entrar" title="Entrar" />
-            </Login>
+            </Login> */}
             <Find>
               <img src={IconFind} alt="Buscar" title="Buscar" />
             </Find>

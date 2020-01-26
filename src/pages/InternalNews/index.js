@@ -2,10 +2,9 @@ import React, { useEffect } from "react";
 import WOW from "wowjs";
 
 import Top from "../../components/Top";
-import InternalPage from "../../components/InternalPage";
-import Footer from "../../components/Footer";
+import InternalNews from "../../components/InternalNews";
 
-export default function News() {
+export default function InternalNewsComponent() {
   useEffect(() => {
     const wow = new WOW.WOW();
     wow.init();
@@ -14,8 +13,7 @@ export default function News() {
   return (
     <>
       <Top />
-      <InternalPage />
-      <Footer />
+      <InternalNews />
     </>
   );
 }

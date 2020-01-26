@@ -2,6 +2,11 @@ import React from "react";
 
 import { Footer, Container, Content, Copyright } from "./styles";
 
+import IconFacebook from "../../assets/icons/facebook.png";
+import IconInstagram from "../../assets/icons/instagram.png";
+import IconTwitter from "../../assets/icons/twitter.png";
+import IconYoutube from "../../assets/icons/youtube.png";
+
 export default function ComponentFooter() {
   return (
     <Footer>
@@ -45,18 +50,30 @@ export default function ComponentFooter() {
             </li>
           </ul>
 
-          <ul>
+          <div className="social-profile">
+            <h3>Redes Sociais</h3>
             <li>
-              <a href="/"></a>
+              <a href="/">
+                <img src={IconFacebook} alt="Facebook" title="Facebook" />
+              </a>
             </li>
             <li>
-              <a href="/"></a>
+              <a href="/">
+                <img src={IconInstagram} alt="Instagram" title="Instagram" />
+              </a>
             </li>
 
             <li>
-              <a href="/"></a>
+              <a href="/">
+                <img src={IconTwitter} alt="Twitter" title="Twitter" />
+              </a>
             </li>
-          </ul>
+            <li>
+              <a href="/">
+                <img src={IconYoutube} alt="Youtube" title="Youtube" />
+              </a>
+            </li>
+          </div>
         </Content>
       </Container>
       <Copyright>
